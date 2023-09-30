@@ -1,0 +1,27 @@
+Q1:
+https://github.com/ale2cs/CMPUT_404-Django
+
+Q2:
+After starting a brand new Django application and running the runserver command, the browsers shows
+me a rocket ship blasting off and a header that says "The install worked successfully! Congratulations!
+
+Q3:
+After creating the first view within polls, the browser shows me Page not found (404) for when navigating to / and a page that displays "Hello, world. You're at the polls index." when navigating to /polls.
+
+Q4:
+Django migration is to update the database schema to the changes we made to the models.
+
+Q5:
+After logging into the Django adminstration site, I see two different sections including: Authentication and Polls. The Authentication section has Groups and Users, while Polls has Choices and Questions. To get custom models to appear in the Django admin page we must create the models and register them to admin.
+
+Q6:
+When going to /polls/38/ in my browser I see it display "You're looking at question 38.". For the path /polls/38/results I see "You're looking at the results of question 38." and for the path /polls/38/vote I see "You're voting on question 38.". Replacing the numder for a string in the path will result in 404 error page not found. To allow arbitrary alphabetic characters I would use <str:question_id> instead of using <int:question_id>.
+
+Q7:
+It is a bad idea to hardcode urls into the templates because it will be tedious to change the path 
+whenever there is an update and it could cause an error if we don't catch that path should have changed.
+
+Q8:
+The benefits of using Django's generic views over writing views 'the hard way' are that its simplierto implement, faster to develop, and is reuasable for many different views. I believe you should use
+generic views whenever you can if the view is simple enough, but if the view is complex it may be 
+better to implement a custom view.
